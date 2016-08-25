@@ -22,6 +22,9 @@ Template.registerHelper("usernameFromId", function (userId) {
 	if (typeof user.services.github !== "undefined") {
 		return user.services.github.username;
 	}
+	if (typeof user.services.facebook !== "undefined") {
+		return user.services.facebook.username;
+	}
 	return user.username;
 });
 
