@@ -16,7 +16,7 @@ Meteor.startup(function() {
     channel: 'general'
   });
 
-  //Messages.remove({});
+  Messages.remove({});
 
   Channels.remove({});
   Channels.insert({
